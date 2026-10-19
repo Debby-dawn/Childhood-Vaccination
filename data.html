@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaccination Coverage Dashboard</title>
+<link rel="stylesheet" href="data.css">
+</head>
+<body>
+<header>
+  <h1>Childhood vaccination coverage</h1>
+  <p class="sub">Compare how the share of children receiving a full vaccine course changed over time across regions.</p>
+  <div class="warn"><strong>Practice data.</strong> The numbers are made up for practical purposes</div>
+</header>
+
+<main class="layout">
+  <section class="panel" aria-label="Controls">
+    <fieldset id="regions">
+      <legend>Regions to show</legend>
+    </fieldset>
+    <div id="summary" aria-live="polite"></div>
+  </section>
+
+  <section class="panel" aria-label="Chart">
+    <div class="chart-wrap"><canvas id="chart"></canvas></div>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="data.js"></script>
+</body>
+</html>
